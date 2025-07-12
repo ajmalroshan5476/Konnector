@@ -74,10 +74,9 @@ const How = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">How It Works</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 mt-20">🌀 The Vibe Flow</h2>
           <p className="text-lg sm:text-xl text-primaryText font-semibold max-w-3xl mx-auto">
-            Discover the powerful features that make our platform the perfect solution for your communication and
-            collaboration needs.
+            Dive into the features that make collab + convo smoother than ever. 💬⚡
           </p>
         </div>
 
@@ -130,9 +129,11 @@ const How = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
+        
           <button className="bg-gradient-to-r from-amber-400 to-amber-600 hover:from-amber-500 hover:to-amber-700 text-black font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg">
             Get Started Today
           </button>
+        
         </div>
       </div>
     </div>

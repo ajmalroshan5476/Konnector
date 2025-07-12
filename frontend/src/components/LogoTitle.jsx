@@ -6,7 +6,7 @@ const LogoTitle = () => {
   return (
     <div className="w-full h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 px-4">
       <div className="flex flex-col items-center justify-center h-full text-center space-y-4">
-        <img src={logo} alt="Konnecta Logo" className="h-32 md:h-40 lg:h-48" />
+        <img src={logo} alt="Konnecta Logo" className="h-32 md:h-40 lg:h-48 hover:scale-110" />
 
         <div className="border-2 rounded-3xl bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900  p-6 shadow-xl">
 
