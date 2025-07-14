@@ -12,7 +12,7 @@ import Registration from './Pages/Registration';
 import WelcomeEditor from './Pages/WelcomeEditor';
 import WelcomeCreator from './Pages/WelcomeCreator';
 import ProtectedRoute from './auth/ProtectedRoute';
-import ChatroomPage from './Pages/ChatroomPage'; // ✅ Newly added
+import ChatRoomPage from './Pages/ChatRoomPage'; // ✅ Newly added
 
 const App = () => {
   return (
@@ -33,7 +33,7 @@ const App = () => {
         </Route>
 
         {/* ✅ Chatroom Route (joins group then shows chat) */}
-        <Route path="/chat/:roomId" element={<ChatroomPage />} />
+        <Route path="/chat/:roomId" element={<ChatRoomPage />} />
       </Routes>
     </>
   );
