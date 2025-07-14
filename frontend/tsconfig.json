@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES6",                          // Modern JavaScript support
+    "jsx": "react-jsx",                       // JSX support (React 17+ JSX transform)
+    "module": "ESNext",                       // ES module system
+
+    /* JavaScript and TypeScript support */
+    "allowJs": true,                          // ✅ Allow JS files in project
+    "checkJs": false,                         // Optional: set true for type-checking JS files
+    "esModuleInterop": true,                  // Interop with CommonJS modules
+    "allowSyntheticDefaultImports": true,     // Support default imports from modules without them
+
+    /* Project structure */
+    "moduleResolution": "node",               // Resolve modules using Node rules
+    "baseUrl": "./",                          // Base import path
+    "outDir": "./dist",                       // Build output directory
+
+    /* Type Checking */
+    "strict": true,                           // Enable strict type checking
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file casing
+    "skipLibCheck": true                      // Skip type checking of declaration files
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

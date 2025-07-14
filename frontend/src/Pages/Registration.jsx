@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-
+import { Navigate, useNavigate } from 'react-router-dom';
 const Registration = () => {
+  const navigate=useNavigate()
   const [activeForm, setActiveForm] = useState(null);
 
   const [editorFormData, setEditorFormData] = useState({
@@ -43,7 +44,10 @@ const Registration = () => {
       setErrorMessage('Passwords ain’t twins 💔');
     } else {
       setSuccessMessage('Welcome aboard, legend 🛳️🔥');
+      localStorage.setItem('isAuthenticated', 'true');
+      navigate('/welcome-editor')
     }
+    
   };
 
   const handleSubmitCreator = (e) => {
@@ -65,7 +69,11 @@ const Registration = () => {
       setErrorMessage('Passwords ain’t twins 💔');
     } else {
       setSuccessMessage('Welcome to the squad 🙌✨');
+      localStorage.setItem('isAuthenticated', 'true');
+      navigate('/welcome-creator');
     }
+
+    
   };
 
   const handleChangeForCreator = (e) => {
@@ -111,8 +119,8 @@ const Registration = () => {
           <input type='url' name='ytLink' placeholder='Plug in your channel URL 🚀📹' value={creatorFormData.ytLink} onChange={handleChangeForCreator} required className={inputClass} />
           <input type='password' name='passWordCreator' placeholder='Set your secret code 🔑 (aka password)' value={creatorFormData.passWordCreator} onChange={handleChangeForCreator} required className={inputClass} />
           <input type='password' name='confrimPasswordCreator' placeholder='Type it again, no typos allowed 🤞' value={creatorFormData.confrimPasswordCreator} onChange={handleChangeForCreator} required className={inputClass} />
-          {successMessage && <label className="text-green-400">{successMessage}</label>}
-          {errorMessage && <label className="text-red-400">{errorMessage}</label>}
+          {successMessage && <label className="text-green-400 flex-col items-center">{successMessage}</label>}
+          {errorMessage && <label className="text-red-400 text-center flex-col items-center bg-red-700">{errorMessage}</label>}
           <button type='submit' className='w-full mt-4 py-3 bg-yellow-500 text-black font-bold rounded-xl hover:bg-yellow-600 transition'>
             🚀 Let’s get you in!
           </button>
