@@ -6,7 +6,7 @@ import Home from './Pages/Home';
 import Pricing from './Pages/Pricing';
 import Contact from './Pages/Contact';
 import How from './Pages/How';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import LogoTitle from './components/LogoTitle';
 import Registration from './Pages/Registration';
 import WelcomeEditor from './Pages/WelcomeEditor';
